@@ -1,4 +1,4 @@
-[🎯 Penetration Testing Learning Roadmap - 2 (Videos/Practical labs) Collected](#penetration-testing-learning-roadmap---2-videos-practical-labs-collected)
+[🎯 Penetration Testing Learning Roadmap - 2 (YT Videos/Practical labs) Collected](#penetration-testing-learning-roadmap---2-videos-practical-labs-collected)
 
 <a id="penetration-testing-learning-roadmap---1-videos-practical-labs-collected"></a>
 
@@ -1730,7 +1730,7 @@ Remember: **Everyone started as a beginner.** The key is consistent, focused pra
 
 <a id="penetration-testing-learning-roadmap---2-videos-practical-labs-collected"></a>
 
-# 🎯 Penetration Testing Learning Roadmap - 2 (Videos/Practical labs) [Collected]
+# 🎯 Penetration Testing Learning Roadmap - 2 (YT Videos/Practical labs) [Collected]
 
 ## Roadmap’s Goals
 
