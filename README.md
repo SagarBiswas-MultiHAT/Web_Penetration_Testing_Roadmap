@@ -277,6 +277,19 @@ _**Start hacking now, and happy hunting!** 🏹_
 
 </div>
 
+#### 🌟 Additional Suggestions for Labs
+
+Here are a few other labs you could consider adding:
+
+1. **Introductory Rooms** 🧑‍💻: Perfect for beginners just starting out on TryHackMe.
+2. **Linux Fundamentals** 🐧: Learn Linux, a critical skill for hacking.
+3. **Privilege Escalation** 📈: Explore how to elevate permissions for better control in systems.
+4. **Malware Analysis** 🦠: Investigate and reverse-engineer malicious code.
+5. **Web Hacking** 🌐: Master web vulnerabilities and exploit them like a pro.
+6. **OSINT (Open Source Intelligence)** 🕵️‍♂️: Dive into gathering intelligence from publicly available sources.
+7. **Social Engineering** 🧠: Practice rooms focusing on human-based hacking techniques like phishing.
+8. **Exploit Development** 💻: Learn how to create and modify exploits.
+9. **Cloud Security** ☁️: Add rooms related to AWS, Azure, or GCP security.
 
 ##### Intro Rooms
 
