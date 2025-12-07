@@ -241,6 +241,8 @@ _**Start hacking now, and happy hunting!** 🏹_
 
 #### 📜 **Table of Contents**
 
+<div align="center">
+
 | 🔐 **Category**                                  | 🔢 **Rooms** | 🔒 **Rooms Completed by Me** |
 | ------------------------------------------------ |:------------:|:---------------------------:|
 | **[Introductory Rooms](#intro-rooms)**           |     21       |            9                |
@@ -272,6 +274,8 @@ _**Start hacking now, and happy hunting!** 🏹_
 | **[Misc](#misc)**                                |     43       |                             |
 | **[Special Events](#special-events)**            |     12       |             1               |
 | **Total Rooms:**                                 |    **= 502** |          **= 50**           |
+
+</div>
 
 
 ##### Intro Rooms
