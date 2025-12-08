@@ -1,6 +1,10 @@
-[🎯 Penetration Testing Learning Roadmap - 2 (YT Videos/Practical labs) Collected](#penetration-testing-learning-roadmap---2-videos-practical-labs-collected)
+[🎯 Penetration Testing Learning Roadmap - 2 (YT Videos/Practical labs) Collected](#web-penetration-testing-learning-roadmap-2)
 
-<a id="penetration-testing-learning-roadmap---1-videos-practical-labs-collected"></a>
+[🎯 Web Penetration Testing Roadmap - 3 (Goals, Practice, Suggested Resources, Tasks) Free](#web-penetration-testing-learning-roadmap-3)
+
+
+<a id="web-penetration-testing-learning-roadmap-1"></a>
+
 
 # 🎯 Penetration Testing Learning Roadmap - 1 
 
@@ -1725,10 +1729,11 @@ Remember: **Everyone started as a beginner.** The key is consistent, focused pra
 <br>
 <br>
 
-[🎯 Penetration Testing Learning Roadmap - 1](#penetration-testing-learning-roadmap---1-videos-practical-labs-collected)
+[🎯 Penetration Testing Learning Roadmap - 1](#web-penetration-testing-learning-roadmap-1)
 
+[🎯 Web Penetration Testing Roadmap - 3 (Goals, Practice, Suggested Resources, Tasks) Free Certifications](#web-penetration-testing-learning-roadmap-3)
 
-<a id="penetration-testing-learning-roadmap---2-videos-practical-labs-collected"></a>
+<a id="web-penetration-testing-learning-roadmap-2"></a>
 
 # 🎯 Penetration Testing Learning Roadmap - 2 (YT Videos/Practical labs) [Collected]
 
@@ -1828,6 +1833,571 @@ In this stage, we will learn new vulnerabilities, deep dive into the OWASP Top 1
 ---
 
 
+<br>
+<br>
+
+[🎯 Web Penetration Testing Learning Roadmap - 1](#web-penetration-testing-learning-roadmap-1)
+
+[🎯 Web Penetration Testing Learning Roadmap - 2 (YT Videos/Practical labs) Collected](#web-penetration-testing-learning-roadmap-2)
+
+<a id="web-penetration-testing-learning-roadmap-3"></id>
+
+# 🎯 Web Penetration Testing Roadmap - 3 (Goals, Practice, Suggested Resources, Tasks) Free Certifications 
+
+This repository contains a **12‑week, completely free learning roadmap** to go from beginner to web penetration testing (ethical hacking of websites).
+
+Web penetration testing means systematically finding and exploiting security flaws in web applications. It builds on:
+
+- Web fundamentals: HTTP/HTTPS, HTML, browsers, cookies, sessions  
+- Common vulnerabilities: injection flaws (e.g. SQLi), XSS, CSRF, authentication issues, etc.  
+- Industry standards:  
+  - **[OWASP Top Ten](https://owasp.org/www-project-top-ten/):** the most critical web risks  
+  - **[OWASP Web Security Testing Guide (WSTG)](https://owasp.org/www-project-web-security-testing-guide/):** comprehensive testing framework
+
+You’ll learn step by step over **12 weeks**, using:
+
+- Free tools: **Kali Linux**, **Burp Suite Community**, **OWASP ZAP**, **sqlmap**, etc.  
+- Free vulnerable labs: **DVWA**, **OWASP Juice Shop**, **TryHackMe**, **HackTheBox**, **OverTheWire**, etc.  
+- Free video tutorials and free certificates.
+
+> Recommended pace: **10–15 hours per week**. The roadmap moves from basics → core web vulnerabilities → advanced attacks → CTFs & bug bounties.
+
+---
+
+## Week 1 – Setup & Web Fundamentals
+
+Set up your **hacking lab** and learn how the web works.
+
+**Goals**
+
+- Install a lab environment:
+  - Kali Linux VM
+  - A vulnerable web app (e.g. **DVWA** or **OWASP Juice Shop**)
+- Understand:
+  - HTTP/HTTPS (methods, status codes, requests vs responses)
+  - DNS, web servers, browsers, cookies, and sessions
+- Start using **intercepting proxies** (Burp Suite Community, OWASP ZAP)
+
+**What to Study**
+
+- HTTP basics, including:
+  - GET, POST and other methods
+  - Status codes (2xx, 3xx, 4xx, 5xx)
+  - Difference between HTTP and HTTPS
+- Client–server model and why HTTP is the “backbone” of web data exchange.
+
+**Practice**
+
+- Intercept and modify simple form requests to DVWA/Juice Shop using your browser and Burp/ZAP.
+- Inspect and understand cookies and basic session behavior.
+
+**Suggested Resources**
+
+- YouTube:
+  - “HTTP Methods Explained”
+  - “OWASP Juice Shop Walkthrough”
+- Web:
+  - [PortSwigger Web Security Academy – “How the Web Works”](https://portswigger.net/web-security)
+  - OWASP HTTP definitions  
+  - HTTP protocol tutorials (e.g. TutorialsPoint HTTP Basics)
+
+**Tasks**
+
+- Set up Kali VM and install DVWA or Juice Shop.
+- Learn HTTP protocols (HTTP vs HTTPS).
+- Use Burp/ZAP to intercept and modify requests.
+
+---
+
+## Week 2 – Reconnaissance & Scanning
+
+Learn how to **find web targets and hidden endpoints**.
+
+**Goals**
+
+- Use search and OSINT for target discovery.
+- Learn network and web scanning.
+- Enumerate directories, files, and parameters.
+
+**Tools & Techniques**
+
+- Google Dorks for discovery.
+- **Nmap** for port and service scanning.
+- **Gobuster**/**Dirb** for directory and file brute-forcing.
+- **Nikto** for basic web scanning.
+- **Burp Suite Proxy** to discover parameters, hidden fields, and pages.
+- Subdomain/OSINT tools: **sublist3r**, **Amass**.
+
+**Practice**
+
+- Run Nmap against a VM target.
+- Run Nikto, Gobuster/Dirb against DVWA/Juice Shop.
+- Use Burp Proxy to map hidden inputs and pages.
+
+**Suggested Resources**
+
+- YouTube:
+  - HackerSploit – HTTP Recon & Google Hacking
+  - The Cyber Mentor – Web Application Testing Part 1
+- Web:
+  - OWASP Testing Guide – Information Gathering
+  - PortSwigger labs on Content Discovery
+  - [OverTheWire – Natas](https://overthewire.org/wargames/natas/) (web recon and server-side basics)
+
+**Tasks**
+
+- Run Nmap on a VM target.
+- Use Gobuster to find hidden directories/files.
+- Start OverTheWire Natas for web-based recon challenges.
+
+---
+
+## Week 3 – SQL Injection (SQLi)
+
+One of the most famous and critical web vulnerabilities.
+
+**Goals**
+
+- Understand SQL Injection types:
+  - UNION-based
+  - Boolean-based (and error-based)
+- Learn manual exploitation and automation with **sqlmap**.
+
+**Practice**
+
+- Use DVWA’s SQLi module and Juice Shop’s SQLi challenges.
+- Craft manual payloads like:
+  - `' OR 1=1--`
+  - `' || 1=1--`
+- Use Burp to intercept login/parameterized requests and inject malicious SQL.
+- Use **sqlmap** against a test URL for automated exploitation.
+
+**Suggested Resources**
+
+- YouTube:
+  - HackerSploit – OWASP Juice Shop SQL Injection
+  - The Cyber Mentor – SQL Injection Explained
+- Web:
+  - [OWASP SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection)
+  - TryHackMe:
+    - [SQL Injection room](https://tryhackme.com/room/sqlinject)
+    - “Web Fundamentals” labs
+
+**Tasks**
+
+- Exploit SQLi on DVWA at low and medium levels, then increase difficulty.
+- Run sqlmap on a vulnerable test URL/lab.
+
+---
+
+## Week 4 – Cross-Site Scripting (XSS)
+
+Inject malicious scripts into web pages.
+
+**Goals**
+
+- Understand and exploit:
+  - Reflected XSS
+  - Stored XSS
+  - DOM-based XSS
+- Learn how XSS can hijack sessions, steal cookies, and perform CSRF-like actions.
+
+**Practice**
+
+- DVWA:
+  - XSS (Reflected) and XSS (Stored) modules.
+- Juice Shop:
+  - Find search, greeting, or input fields and try payloads like:
+    ```html
+    <script>alert(1)</script>
+    ```
+- Use Burp to modify parameters and test multiple payloads.
+- Experiment in the browser console with different payloads and encodings.
+
+**Suggested Resources**
+
+- YouTube:
+  - HackerSploit – Web App Pentesting XSS (Reflected/Stored/DOM)
+  - Traversy Media – XSS Tutorial
+- Web:
+  - [OWASP Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
+  - PortSwigger XSS labs
+
+**Tasks**
+
+- Find and exploit several XSS vulnerabilities in your lab apps.
+- Demonstrate how an XSS can access cookies or perform actions on behalf of a user (in a safe lab).
+
+---
+
+## Week 5 – File Inclusion & Remote Code Execution (RCE)
+
+Abusing insecure file handling and command execution.
+
+**Goals**
+
+- Understand:
+  - Local File Inclusion (LFI)
+  - Remote File Inclusion (RFI)
+  - Command Injection → Remote Code Execution
+
+**Practice**
+
+- DVWA:
+  - File Inclusion challenge – try:
+    - Reading files like `/etc/passwd`
+    - Using wrappers like `php://input` if available
+  - Command Injection module – inject commands such as:
+    ```bash
+    ; ls
+    && whoami
+    ```
+- See how unsanitized input leads to file reads or code execution.
+
+**Suggested Resources**
+
+- YouTube:
+  - HackerSploit – LFI & RFI Tutorials
+- Web:
+  - OWASP Testing Guide – File Inclusion
+  - OWASP Testing Guide – Command Injection
+  - TryHackMe lab on File Inclusion
+
+**Tasks**
+
+- Exploit DVWA LFI/RFI to show arbitrary file reads or code execution.
+- Achieve basic RCE via command injection in the lab.
+
+---
+
+## Week 6 – CSRF, Authentication & Session Management
+
+Abusing trust in the user’s browser and weak session controls.
+
+**Goals**
+
+- Understand **Cross-Site Request Forgery (CSRF)**.
+- Learn **broken authentication** patterns:
+  - Weak passwords & poor password policies
+  - Session hijacking and fixation
+  - Common JWT-related flaws
+
+**Practice**
+
+- DVWA:
+  - CSRF demo – send forged requests that change user data without a valid CSRF token.
+- Build a CSRF Proof of Concept:
+  - A hidden HTML form that auto-submits to your lab app.
+- Explore how Juice Shop manages sessions:
+  - See how cookies and tokens are set and used.
+  - Experiment with cookie manipulation in a controlled environment.
+
+**Suggested Resources**
+
+- YouTube:
+  - Rana Khalil – CSRF Explained
+- Web:
+  - OWASP CSRF Prevention Cheat Sheet
+  - OWASP Session Management Cheat Sheet
+
+**Tasks**
+
+- Implement a working CSRF PoC against your lab app.
+- Analyze and document its session management and auth flows.
+
+---
+
+## Week 7 – Advanced Injection & Business Logic
+
+Go beyond the basics into more advanced web vulnerabilities.
+
+**Goals**
+
+- Learn:
+  - XML External Entity (XXE) Injection
+  - Server-Side Request Forgery (SSRF)
+  - (Optional/extra) Insecure Deserialization and Object Injection
+
+**Practice**
+
+- XXE:
+  - If your lab has XML upload/parse features, try payloads such as:
+    ```xml
+    <!DOCTYPE foo [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
+    <foo>&xxe;</foo>
+    ```
+- SSRF:
+  - Look for any feature that fetches a URL (e.g. image fetch, webhook tester).
+  - Try pointing it at internal IPs (e.g. `http://127.0.0.1`) in a **lab**.
+- Additional:
+  - Explore CTFs that provide insecure deserialization or object injection challenges.
+
+**Suggested Resources**
+
+- YouTube:
+  - HackerOne – SSRF Introduction
+- Web:
+  - OWASP XXE Prevention Cheat Sheet
+  - OWASP SSRF cheat sheet/wiki
+
+**Tasks**
+
+- Trigger at least one XXE lab challenge (e.g. Juice Shop has XML-based challenges).
+- Attempt SSRF challenges in CTF environments if available.
+
+---
+
+## Week 8 – Mastering Tools (Burp Suite & OWASP ZAP)
+
+Get fluent with your main web pentesting tools.
+
+**Goals**
+
+- Become comfortable with:
+  - **Burp Suite Community**
+  - **OWASP ZAP**
+
+**Burp Suite Focus**
+
+- Repeater: modify and resend requests.
+- Intruder: brute-force or fuzz parameters.
+- Decoder/Comparer: encode/decode and compare responses.
+- Spider/Crawler: map out a target application.
+- Explore useful Burp extensions, e.g. **Autorize** for access control testing.
+
+**ZAP Focus**
+
+- Automated scanning and spidering.
+- Manual request modification and interception.
+
+**Practice**
+
+- Work through PortSwigger’s Burp Suite labs.
+- Use Intruder to brute-force a simple short password or PIN.
+- Run ZAP scans against your lab applications and compare findings with Burp.
+
+**Suggested Resources**
+
+- YouTube:
+  - PortSwigger – Burp Suite Beginner Tutorial
+- Web:
+  - OWASP ZAP User Guide
+  - PortSwigger Web Security Academy – “Burp Suite: The Basics”
+  - TryHackMe rooms covering Burp/ZAP basics
+
+**Tasks**
+
+- Complete basic Burp Suite training path on PortSwigger Academy.
+- Use Burp Intruder or ZAP to automate at least one attack (e.g. simple credential brute-force) in a lab.
+
+---
+
+## Week 9 – Web Application Attacks: Business Logic & Insecure Design
+
+Understand **application-specific** weaknesses.
+
+**Goals**
+
+- Learn about **Business Logic Flaws**, such as:
+  - Bypassing workflow steps
+  - Manipulating transaction limits
+  - Race conditions
+- Explore insecure design issues:
+  - Missing or weak security headers (CSP, X-Frame-Options, HSTS)
+  - Clickjacking
+
+**Practice**
+
+- Implement a basic clickjacking demo:
+  - Frame a vulnerable page using an `<iframe>` and overlay UI.
+- Use tools like `securityheaders.com` to scan for missing security headers.
+- Examine OAuth/JWT flows (if available in your labs):
+  - Try modifying JWT payloads (e.g. role claims) to see whether proper verification is enforced.
+
+**Suggested Resources**
+
+- YouTube:
+  - The Cyber Mentor – Business Logic Flaws
+- Web:
+  - OWASP Insecure Design
+  - OWASP Clickjacking Defense Cheat Sheet
+
+**Tasks**
+
+- Identify at least one logical flaw or weak design decision in a test application.
+- Verify how security headers are configured and document missing controls.
+
+---
+
+## Week 10 – Practice Projects & CTF
+
+Put everything together in realistic scenarios.
+
+**Goals**
+
+- Conduct an end-to-end **web app pentest**.
+- Get exposure to **CTF-style** web challenges.
+
+**Practice**
+
+- Choose 1–2 free targets:
+  - DVWA (all modules, higher security levels)
+  - Juice Shop (try to find most of the OWASP Top 10 issues)
+  - Juice Shop CTF challenges
+- Attempt:
+  - [TryHackMe – OWASP Juice Shop room](https://tryhackme.com/)
+  - HackTheBox web machines such as “Fortune” (when available as a free box)
+- Write a **pentest report** (even if just for yourself), including:
+  - Scope
+  - Methodology
+  - Findings with impact and remediation
+  - Proof of Concept screenshots or request/response samples
+
+**Suggested Resources**
+
+- TryHackMe:
+  - Web Penetration Testing rooms and paths
+- OverTheWire:
+  - Natas (web wargame)
+- [BugBountyHunter.com](https://bugbountyhunter.com/):
+  - Free bug bounty challenge labs
+
+**Tasks**
+
+- Complete at least one full end-to-end pentest on a lab app (mapping → exploitation → reporting).
+- Solve several CTF web challenges and document your solutions.
+
+---
+
+## Week 11 – Bug Bounty & CTF Focus
+
+Prepare for real-world bug bounties and organized competitions.
+
+**Goals**
+
+- Learn bug bounty workflow:
+  - Scoping targets and staying legal
+  - Reading and following program rules
+  - Writing clear reports
+- Improve CTF & hunting skills through practice platforms.
+
+**Practice**
+
+- Study public bug reports on:
+  - [HackerOne](https://hackerone.com/)
+- Learn how to use Burp’s active scanner on **demo** or lab apps.
+- Start low-risk, authorized hunting:
+  - HackerOne/Hacker101 lab targets
+  - Beginner-friendly programs and CTFs
+
+**Suggested Resources**
+
+- Web:
+  - HackerOne – Hacker101 courses and labs
+  - BugBountyHunter.com – training challenges
+  - OWASP Bug Bounty guidelines
+- YouTube:
+  - LiveOverflow – Bug Bounty tutorials
+
+**Tasks**
+
+- Read multiple public bug bounty reports and rewrite them in your own words.
+- Complete at least one Hacker101 or BugBountyHunter lab from start to finish.
+
+---
+
+## Week 12 – Review, Certification & Next Steps
+
+Consolidate your knowledge and plan your long-term path.
+
+**Goals**
+
+- Review and fill in knowledge gaps from previous weeks.
+- Complete a **capstone project**.
+- Explore **free certifications and badges** to showcase your skills.
+
+**Capstone Ideas**
+
+- Fix vulnerabilities in sample code or in your own small web app.
+- Build a very simple intentionally vulnerable app and document its issues.
+- Perform a full pentest against your own app and write a full report.
+
+**Free Certifications & Training**
+
+- **(ISC)² Certified in Cybersecurity (CC)**
+  - Free self-study training and exam options for entry-level cybersecurity  
+  - Shows understanding of security fundamentals
+- **TryHackMe Certificates**
+  - Completing paths like “Web Fundamentals” yields verifiable certificates
+- **EC-Council Free Courses**
+  - ~24 free cybersecurity courses with certificates (topics from SQLi to cloud)
+- Other Vendors:
+  - **Fortinet NSE**, **Microsoft Learn**, **Cisco NetAcad**, etc.
+  - Coursera/edX allow auditing pentesting courses for free (certs usually paid).
+
+**Career & Community**
+
+- Update your **resume** and **GitHub**:
+  - List labs, CTFs, and paths completed
+  - Add write-ups and code samples from your capstone projects
+- Join security communities:
+  - Reddit (e.g. /r/netsec, /r/AskNetsec, /r/bugbounty)
+  - Discord CTF/bounty servers
+- Continue practicing strictly on **authorized** platforms:
+  - Never test real sites without explicit permission.
+
+---
+
+## Summary
+
+This 12‑week plan takes you from:
+
+- **Web basics** → HTTP, HTTPS, DNS, sessions  
+- Through **core web vulnerabilities**:
+  - SQLi, XSS, CSRF
+  - File inclusion, RCE, auth & session flaws
+  - XXE, SSRF, business logic issues
+- To **advanced practice**:
+  - Burp Suite & ZAP mastery
+  - CTFs and bug bounty workflows
+  - Full pentest projects and reporting
+
+By Week 12, with 10–15 hours/week, you should be ready to:
+
+- Compete in beginner/intermediate **CTFs**
+- Start **bug bounty** hunting on low-risk, authorized programs
+- Apply for **entry-level security roles** with:
+  - Hands-on lab experience
+  - Public write-ups or GitHub projects
+  - Free certifications (e.g. ISC2 CC, TryHackMe path certificates, EC-Council free course certs)
+
+---
+
+## Sources & Recommended Reading
+
+Authoritative guides and learning platforms that support and expand on this roadmap:
+
+- [OWASP](https://owasp.org/)
+  - OWASP Top Ten
+  - OWASP Web Security Testing Guide
+  - OWASP Cheat Sheets (XSS, CSRF, Session Management, XXE, etc.)
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+  - Free, up-to-date web security labs and Burp Suite training
+- Tutorials and references:
+  - TutorialsPoint HTTP Basics
+- Practice platforms:
+  - [TryHackMe](https://tryhackme.com/)
+  - [HackTheBox](https://hackthebox.com/)
+  - [BugBountyHunter.com](https://bugbountyhunter.com/)
+  - [OverTheWire](https://overthewire.org/)
+- Certifications & courses:
+  - [ISC2 – Certified in Cybersecurity (CC)](https://www.isc2.org/)
+  - [EC-Council free courses](https://www.eccouncil.org/)
+
+These sources confirm the scope of modern web vulnerabilities and the availability of **free, high-quality training and certifications**.
+
+---
+
 ## 🤝 Contributing
 
 This roadmap is a living document! Please contribute by:
@@ -1845,6 +2415,7 @@ This roadmap is a living document! Please contribute by:
 Always follow responsible disclosure practices when finding vulnerabilities.
 
 ---
+
 
 <details><summary><h2>📂 My More Work</h2></summary>
   
@@ -2011,4 +2582,3 @@ Always follow responsible disclosure practices when finding vulnerabilities.
 </p>
 
 </details>
-
